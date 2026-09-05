@@ -15,7 +15,7 @@ Tidak perlu akun GitHub untuk mengikuti kelas. GitHub hanya untuk mengunduh file
 ## Clone
 
 ```bash
-git clone https://github.com/kodepas/tmux-dari-nol-besar.git
+git clone https://github.com/lobothijau/tmux-dari-nol-besar.git
 cd tmux-dari-nol-besar
 ```
 
