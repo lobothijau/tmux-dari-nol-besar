@@ -1,8 +1,8 @@
-# tmux dari Nol — starter
+# tmux dari Nol — final
 
-Titik awal kelas [tmux dari Nol](https://kodepas.com/kelas/tmux-dari-nol-besar).
+Konfigurasi lengkap Modul 7–8 kelas [tmux dari Nol](https://kodepas.com/kelas/tmux-dari-nol-besar): mouse, history, key binding, copy-mode vi, dan status bar sederhana.
 
-File `.tmux.conf` di sini adalah pratinjau Modul 7: mouse, history panjang, dan copy-mode vi. Tantangan konfigurasi menambah satu key binding kustom. Cabang `final` adalah hasil lengkap Modul 7–8.
+Prefix tetap `Ctrl+b`. Plugin TPM tidak disertakan — ubah sedikit, tes, baru tambah.
 
 ## Prasyarat
 
@@ -14,14 +14,23 @@ File `.tmux.conf` di sini adalah pratinjau Modul 7: mouse, history panjang, dan 
 ```bash
 git clone https://github.com/kodepas/tmux-dari-nol-besar.git
 cd tmux-dari-nol-besar
-git checkout starter
+git checkout final
 cp .tmux.conf ~/.tmux.conf
 tmux source-file ~/.tmux.conf
 ```
 
-Kalau belum ada sesi tmux, `tmux new` dulu baru `source-file`.
+## Binding yang ditambah
 
-## Lanjut
+| Setelah prefix `Ctrl+b` | Aksi |
+|---|---|
+| `r` | Reload `~/.tmux.conf` |
+| `|` | Split vertikal di direktori pane aktif |
+| `-` | Split horizontal di direktori pane aktif |
 
-- Tantangan: lihat folder di cabang `main`
-- Hasil akhir: `git checkout final`
+Copy mode (vi): `Ctrl+b [` lalu `v` pilih, `y` salin, `q` keluar. Paste: `Ctrl+b ]`.
+
+## Bandingkan dengan starter
+
+```bash
+git diff starter final -- .tmux.conf
+```
