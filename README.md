@@ -12,7 +12,7 @@ Prefix tetap `Ctrl+b`. Plugin TPM tidak disertakan — ubah sedikit, tes, baru t
 ## Pasang
 
 ```bash
-git clone https://github.com/kodepas/tmux-dari-nol-besar.git
+git clone https://github.com/lobothijau/tmux-dari-nol-besar.git
 cd tmux-dari-nol-besar
 git checkout final
 cp .tmux.conf ~/.tmux.conf
