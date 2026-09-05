@@ -12,7 +12,7 @@ File `.tmux.conf` di sini adalah pratinjau Modul 7: mouse, history panjang, dan 
 ## Pasang
 
 ```bash
-git clone https://github.com/kodepas/tmux-dari-nol-besar.git
+git clone https://github.com/lobothijau/tmux-dari-nol-besar.git
 cd tmux-dari-nol-besar
 git checkout starter
 cp .tmux.conf ~/.tmux.conf
